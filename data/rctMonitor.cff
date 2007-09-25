@@ -1,0 +1,12 @@
+
+    # Configure the RCT Monitor
+    include "DQM/RCTMonitor/data/rctMonitor.cfi"
+    
+    # Back-end interface service
+    service = DaqMonitorROOTBackEnd{}
+
+    # MonitorDaemon configuration
+    include "DQMServices/Daemon/test/data/dqm_monitorDaemon.cfi"
+
+    sequence rctMonitor ={rctmonitor}
+
