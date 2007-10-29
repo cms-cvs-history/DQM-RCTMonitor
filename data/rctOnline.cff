@@ -1,0 +1,14 @@
+# Configure the GCT Monitor
+include "DQM/RCTMonitor/data/rctMonitor.cfi"
+
+    # Back-end interface service
+    service = DaqMonitorROOTBackEnd{}
+
+    # MonitorDaemon configuration
+    include "DQMServices/Daemon/test/data/dqm_monitorDaemon.cfi"
+
+
+# Congigure GCT RawToDigi
+include "EventFilter/GctRawToDigi/data/l1GctHwDigis.cfi"
+
+sequence rctOnline ={l1GctHwDigis,rctmonitor}
