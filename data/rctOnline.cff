@@ -5,7 +5,7 @@ include "DQM/RCTMonitor/data/rctMonitor.cfi"
     service = DaqMonitorROOTBackEnd{}
 
     # MonitorDaemon configuration
-    include "DQMServices/Daemon/test/data/dqm_monitorDaemon.cfi"
+    include "DQMServices/Examples/test/dqm_monitorDaemon.cfi"
 
 
 # Congigure GCT RawToDigi
